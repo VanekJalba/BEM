@@ -1,7 +1,7 @@
 @import 'fonts.css';
 
 body {
-    background: gray;
+    font-family: 'Open Sans';
 }
 
 ul, li {
@@ -20,8 +20,7 @@ ul, li {
     margin-left: 37px;
 }
 
-.menu__item a {
-    font-family: 'Open Sans SemiBold';
+.menu__item a {    
     font-size: 20px;
     color: #212121;
 }
@@ -29,4 +28,139 @@ ul, li {
 .menu__item a:hover {
     text-decoration: none;
     color: #868686;
+}
+
+/* Шапка */
+.header {
+    color: white;
+    text-align: center;
+    padding: 180px 0;
+    background-size: cover;
+    background-position: 0 100%;
+    background-image: url(../img/header.png);
+}
+
+.header__title {
+    font-size: 55px;
+}
+
+.header__text {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.button {
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+    background: #00897b;
+    border: 2px solid #00897b;
+}
+
+.button:hover {
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* О нас*/
+
+.about {
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: black;
+    background: white;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about__text {
+    color: #212121;
+    font-size: 15px;
+    margin-bottom: 110px;
+}
+
+.about_h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+}
+
+/* Услуги */
+.services {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: black;
+    background: #e4fdf9;
+    text-align: center;
+}
+
+.our_card {
+    background: white;
+    padding: 50px 40px 40px;
+    transition: 0.3s;
+    margin-bottom: 30px;   
+}
+
+.our_card:hover {
+    background: #00897b;
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+.our_card:hover .icon {
+    color: white;
+}
+
+.our_card:hover .button-services {
+    border: 2px solid white;
+    color: white;
+}
+.icon {
+    transition: 0.3s;
+    font-size: 60px;
+    color: black;
+}
+
+.button-services {
+    margin-top: 20px;
+    transition: 0.3s;
+    color: black;
+    text-transform: uppercase;
+    border: 1px solid black;
+    background: transparent;
+    padding: 10px 12px 10px;
+    font-family: 'Open Sans SemiBold';
+}
+
+.button-services:hover {
+    cursor: pointer;
+}
+
+/* Портфолио */
+.portfolio {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 135px;
+}
+
+.portfolio button:hover {
+    color: black;
+    background: transparent;
+    border: 2px solid #00897b;
+}
+
+.portfolio img {
+    margin-bottom: 30px;
+}
+
+.filter {
+    padding: 120px 0;
 }
