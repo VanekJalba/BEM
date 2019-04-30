@@ -110,7 +110,7 @@ ul, li {
 }
 
 .our_card:hover {
-    background: #00897b;
+    background: linear-gradient(90deg, #369898, #5eeebb);
     color: white;
     box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
 }
@@ -151,7 +151,8 @@ ul, li {
     padding-bottom: 135px;
 }
 
-.portfolio button:hover {
+.portfolio button:hover,
+.focused {
     color: black;
     background: transparent;
     border: 2px solid #00897b;
@@ -164,3 +165,237 @@ ul, li {
 .filter {
     padding: 120px 0;
 }
+
+div[filter]:hover img {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.text {
+    display: none;
+}
+
+div[filter]:hover .text {
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+
+}
+
+/* Тарифный план */
+
+.pricing {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: black;
+    background: #f0f1f1;
+    text-align: center;
+}
+
+.price {
+    transition: 0.5s;
+    background: white;
+
+}
+
+.price:hover {
+    box-shadow: 0px 0px 11px 3px rgba(0, 0 , 0, 0.39);
+}
+.price__head {
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 65px;
+    background-image: url(../img/rectangle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 221px;
+}
+
+.price__head p {
+    font-size: 25px;
+}
+
+.price__head {
+    font-size: 50px;
+}
+
+.price__head sub {
+    vertical-align: middle;
+    font-size: 17px;
+}
+
+.price__head sup {
+    vertical-align: middle;
+    font-size: 25px;
+}
+
+.price__body {
+    font-size: 17px;
+    color: black;
+}
+
+.price__body ul li {
+    padding-top: 12px;
+    padding-bottom: 28px;
+    margin: 0 auto;
+    max-width: 175px;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.price__footer {
+    padding: 60px 0;    
+}
+
+.price__footer button {
+    cursor: pointer;
+    color: #212121;
+    background: transparent;
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    border: 2px solid #212121;
+}
+
+.price__footer button:hover {
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(90deg, #369898, #5eeebb);
+    border: none;
+    transition: 0.3s;
+}
+ /* Team */
+ .team {
+     padding-top: 165px;
+     padding-bottom: 125px;
+     color: black;
+     background: white;
+     text-align: center;
+ }
+
+ .team h4 {
+     margin-top: 30px;
+     font-size: 20px;
+     font-family: 'Open Sans Semibold';
+ }
+
+.team p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a i {
+    transition: 0.3s;
+}
+.icons i:nth-child(1) {
+    color: #f0f1f1;
+}
+
+.icons i:nth-child(2) {
+    color: #00897b;
+}
+
+.icons a:hover i:nth-child(1) {
+    color: #3949ab;
+}
+
+.icons a:hover i:nth-child(2) {
+    color: #fff;    
+}
+
+.team img {
+    margin: 0 auto;
+    max-width: 340px;
+}
+
+.dots-style {
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+}
+
+.dots-style button {
+    background: #00897b;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+
+.dots-style li[class="slick-active"] button {
+    background: #3949ab;
+}
+
+/* Blog */
+.left > div:first-child {
+    order: 1;
+}
+
+.left > div:last-child {
+    order: 2;
+}
+
+.right > div:first-child {
+    order: 2;
+}
+
+.right > div:last-child {
+    order: 1;
+}
+
+.blog {
+    text-align: left;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.blog a {
+    font-size: 25px;
+    color: #00897b;
+    font-family: 'Open Sans Semibold';
+}
+
+.blog div {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.blog span {
+    font-size: 17px;
+    font-family: 'Open Sans Semibold';
+    margin-right: 15px;
+}
+
+.blog i {
+    margin-right: 15px;
+}
+
+.left, .right {
+    margin: 0 -40px;
+}
+
+.button_blog {
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    margin-top: 125px;
+    border: none;
+    background: #00897b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
